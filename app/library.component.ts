@@ -6,7 +6,7 @@ interface Book {
 }
 
 @Component({
-    selector:"books-library",
+    selector:"library",
     template:`
         <div>
             <h1>Books Library</h1>
