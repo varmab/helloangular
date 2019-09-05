@@ -1,1 +1,19 @@
-{}
+{
+    "books":[
+        {
+            "id":1,
+            "title":"JS Fundamentals",
+            "author":"Varma"
+        },
+        {
+            "id":2,
+            "title":"React Beginner",
+            "author":"Varma"
+        },
+        {
+            "id":3,
+            "title":"Node Pro",
+            "author":"Varma"
+        }
+    ]
+}

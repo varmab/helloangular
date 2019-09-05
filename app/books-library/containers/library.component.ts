@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-
+import { BooksLibraryService } from '../books-library.service'
 import { Book } from '../models/book.interface'
 
 @Component({
@@ -16,25 +16,17 @@ export class LibraryComponent implements OnInit {
     
     books: Book[];
     wishlist: Book[]=[];
+
+    constructor(private booksLibraryService:BooksLibraryService){}
     
     ngOnInit(){
-        this.books=[
-            {
-                id:1,
-                title:'JS Fundamentals',
-                author:'Varma'
-            },
-            {
-                id:2,
-                title:'React Beginner',
-                author:'Varma'
-            },
-            {
-                id:3,
-                title:'Node Pro',
-                author:'Varma'
-            }
-        ]
+        this.booksLibraryService.getBooks()
+        .subscribe((data:Book[])=>{
+            this.books=data;
+        },
+        (error)=>{
+            console.log(error)
+        });
     }
 
     onAddToWishlist(event){
