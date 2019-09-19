@@ -4,6 +4,7 @@ import { Component } from '@angular/core'
     selector:'counter',
     template:`
         <div>
+            <header></header>
             <h1>Counter</h1>
             <p>{{ count }}</p>
             <button (click)="increment($event)">Increment</button>

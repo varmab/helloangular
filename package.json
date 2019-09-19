@@ -27,7 +27,7 @@
     "prestart": "webpack --config vendor/webpack.config.js",
     "start": "webpack-dev-server",
     "build": "webpack build",
-    "json-server": "json-server --watch db.json --port 3004"
+    "json-server": "json-server --watch db.json --port 4000"
   },
   "devDependencies": {
     "@types/core-js": "0.9.34",

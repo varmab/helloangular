@@ -4,6 +4,7 @@ import { Component } from '@angular/core'
     selector:'welcome',
     template:`
         <div>
+            <header></header>
             Welcome to {{ name }} !!!
         </div>
     `

@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   selector:"app-root",
   template:`
     <div class="app">
-      <books-library></books-library>
+      <users></users>
     </div>
   `,
   styleUrls:['app.component.scss']

@@ -4,6 +4,7 @@ import { Component } from '@angular/core'
     selector:'todos',
     template:`
         <div>
+            <header></header>
             <h1>Todos</h1>
             <input type="text" [(ngModel)]="todo" name="todo">
             <button (click)="addTodo($event)">Add Todo</button>
